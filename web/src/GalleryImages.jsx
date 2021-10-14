@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
 
-const IMAGES =
+const IMAGES_RAW =
 [{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
         thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
@@ -27,9 +27,16 @@ const IMAGES =
         thumbnailHeight: 212
 }]
 
+const getImages = ()=>{
+        let images=[];
+        for(let num=1;num<=30;num++)
+                images.push(IMAGES_RAW[Math.floor(Math.random() * 3)])
+        return images
+}
+
 const GalleryImages = () => {
     return (
-            <Gallery images={IMAGES}/>
+            <Gallery images={getImages()}/>
     );
 }
 export default GalleryImages;
