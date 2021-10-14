@@ -1,1 +1,6 @@
 resources/
+
+web/node_modules/
+web/npm-debug.log
+web/.DS_Store
+web/dist
