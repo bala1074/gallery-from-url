@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Fragment } from "react";
 
 const App = () => {
     return (
-      <h1>Hello Images Gallery :)</h1>
+          <Fragment>
+            <h1 style={{ textDecorationLine: "underline", color: "blue"}}>Welocme to Images Show</h1>
+          </Fragment>
     ); 
 }
 
