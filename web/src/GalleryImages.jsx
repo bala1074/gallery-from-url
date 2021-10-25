@@ -30,9 +30,10 @@ const IMAGES_RAW =
 const getImages = ()=>{
         let images=[];
         for(let num=1;num<=30;num++)
+                let random_number=Math.random().toFixed(3)*1000
                 images.push({
-                        src: `https://source.unsplash.com/random?sig=${Math.random()}/1600x900`,
-                        thumbnail: `https://source.unsplash.com/random?sig=${Math.random()}/1600x900`,
+                        src: `https://source.unsplash.com/random?sig=${random_number}/1600x900`,
+                        thumbnail: `https://source.unsplash.com/random?sig=${random_number}/1600x900`,
                         thumbnailWidth: 320,
                         thumbnailHeight: 174,
                         isSelected: true,
